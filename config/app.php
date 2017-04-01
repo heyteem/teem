@@ -172,8 +172,7 @@ return [
          * Custom Service Providers
          */
 
-         Laravel\Socialite\SocialiteServiceProvider::class,
-
+         \SocialiteProviders\Manager\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
