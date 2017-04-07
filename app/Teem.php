@@ -4,9 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Organization extends Model
+class Teem extends Model
 {
-
     use SoftDeletes;
 
     /**
@@ -15,7 +14,7 @@ class Organization extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'user_id',
+        'name', 'organization_id',
     ];
 
     /**
@@ -31,12 +30,8 @@ class Organization extends Model
         'deleted_at'
     ];
 
-    public function creator(){
-        return $this->belongsTo('App\User');
-    }
-
-    public function teems(){
-        return $this->hasMany('App\Teem');
+    public function organization(){
+        return $this->belongsTo('App\Organization');
     }
 
 }
