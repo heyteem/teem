@@ -42,7 +42,7 @@ class CreateStatusTypes extends Migration
         ]);
 
         DB::table('status_types')->insert([
-            'label' => 'None',
+            'label' => '–',
             'color' => '#fafafa'
         ]);
 

@@ -9,6 +9,8 @@ class StatusType extends Model
 {
     use SoftDeletes;
 
+    protected $table = 'status_types';
+
     /**
      * The attributes that are mass assignable.
      *
