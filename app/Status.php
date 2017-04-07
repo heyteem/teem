@@ -3,13 +3,10 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 class Status extends Model
 {
-    use SoftDeletes;
-
     protected $table = 'statuses';
 
     /**
@@ -20,6 +17,7 @@ class Status extends Model
     protected $fillable = [
         'status_type_id',
         'until',
+        'user_id'
     ];
 
     /**
@@ -33,14 +31,14 @@ class Status extends Model
 
     protected $dates = [
         'deleted_at',
-        'until',
+        'until'
     ];
 
     public function statusType(){
-        return $this->hasOne('App\StatusType');
+        return $this->belongsTo('App\StatusType');
     }
 
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User', 'user_id', 'id');
     }
 }

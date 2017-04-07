@@ -35,6 +35,6 @@ class StatusType extends Model
     ];
 
     public function status(){
-        return $this->belongsToMany('App\Status');
+        return $this->hasOne('App\Status');
     }
 }

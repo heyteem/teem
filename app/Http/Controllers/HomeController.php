@@ -31,7 +31,7 @@ class HomeController extends Controller
 
         $user = User::with('teems.users.status.statusType')->find($user->id);
 
-        return $user;
+        //return $user;
 
         if(sizeof($user->teems) == 0){
             return $user;

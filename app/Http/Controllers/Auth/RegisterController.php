@@ -79,13 +79,6 @@ class RegisterController extends Controller
             }
         }
 
-        $tomorrow = Carbon::now();
-
-        $status = Status::create([
-            'status_type_id' => 5,
-            'until' => $tomorrow
-        ]);
-
 
         $user = User::create([
             'name' => $data['name'],
@@ -93,8 +86,15 @@ class RegisterController extends Controller
             'last_name' => $last_name,
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'status_id' => $status->id,
             'timezone' => 'America/Chicago'
+        ]);
+
+        $tomorrow = Carbon::now();
+
+        $status = Status::create([
+            'status_type_id' => 5,
+            'until' => $tomorrow,
+            'user_id' =>  $user->id
         ]);
 
 
