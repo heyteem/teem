@@ -33,4 +33,8 @@ class StatusType extends Model
     protected $dates = [
         'deleted_at'
     ];
+
+    public function status(){
+        return $this->belongsToMany('App\Status');
+    }
 }

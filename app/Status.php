@@ -35,4 +35,12 @@ class Status extends Model
         'deleted_at',
         'until',
     ];
+
+    public function statusType(){
+        return $this->hasOne('App\StatusType');
+    }
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }

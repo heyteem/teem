@@ -23,6 +23,8 @@ class User extends Authenticatable
         'password',
         'first_name',
         'last_name',
+        'status_id',
+        'timezone'
     ];
 
     /**
@@ -40,6 +42,10 @@ class User extends Authenticatable
 
     public function teems(){
         return $this->belongsToMany('App\Teem');
+    }
+
+    public function status(){
+        return $this->hasOne('App\Status');
     }
 
 }

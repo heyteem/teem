@@ -7,6 +7,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use Carbon\Carbon;
+
+use App\Status;
+
 class RegisterController extends Controller
 {
     /*
@@ -75,12 +79,25 @@ class RegisterController extends Controller
             }
         }
 
-        return User::create([
+        $tomorrow = Carbon::now();
+
+        $status = Status::create([
+            'status_type_id' => 5,
+            'until' => $tomorrow
+        ]);
+
+
+        $user = User::create([
             'name' => $data['name'],
             'first_name' => $first_name,
             'last_name' => $last_name,
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'status_id' => $status->id,
+            'timezone' => 'America/Chicago'
         ]);
+
+
+        return $user;
     }
 }
