@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index');
 
 Route::get('/organization/create', function (){
@@ -26,3 +27,6 @@ Route::get('/organization/create', function (){
 Route::get('/teem/create', function (){
     return view('teem.create');
 });
+
+//Organization Information
+Route::post('/organization', 'OrganizationController@postCreateOrganization');
