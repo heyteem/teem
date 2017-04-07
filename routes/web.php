@@ -17,4 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index');
+
+
+
+//Organization Information
+Route::post('/organization', 'OrganizationController@postCreateOrganization');

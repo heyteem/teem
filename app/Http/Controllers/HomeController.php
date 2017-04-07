@@ -31,9 +31,9 @@ class HomeController extends Controller
 
         $user = User::with('teems')->find($user->id);
 
-        // if(sizeof($user->teems) == 0){
-        //     return $user;
-        // }
+        if(sizeof($user->teems) == 0){
+            return $user;
+        }
 
         return view('home.home');
     }
