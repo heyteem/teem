@@ -249,6 +249,29 @@ footer .footer-inner span {
   margin-bottom: -8px;
 }
 
+
+/*** Create Organization ***/
+.organization-create .text-helper, .teem-create .text-helper {
+  font-size: 14px;
+  color: #c0c0c0;
+}
+
+.organization-create h4, .teem-create h4 {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.organization-create input, .teem-create input {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .navbar-nav>li>a {
     padding-top: 30px;
