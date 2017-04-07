@@ -29,7 +29,9 @@ class HomeController extends Controller
 
         $user = Auth::user();
 
-        $user = User::with('teems')->find($user->id);
+        $user = User::with('teems.users.status.statusType')->find($user->id);
+
+        return $user;
 
         if(sizeof($user->teems) == 0){
             return $user;

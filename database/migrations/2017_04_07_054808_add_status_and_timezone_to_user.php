@@ -14,8 +14,6 @@ class AddStatusAndTimezoneToUser extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('status_id')->unsigned();
-            $table->foreign('status_id')->references('id')->on('statuses');
             $table->string('timezone', 80);
         });
     }
@@ -29,7 +27,6 @@ class AddStatusAndTimezoneToUser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('timezone');
-            $table->dropForeign(['status_id']);
         });
     }
 }
