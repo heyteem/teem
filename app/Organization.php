@@ -39,4 +39,8 @@ class Organization extends Model
         return $this->hasMany('App\Teem');
     }
 
+    public function users(){
+        return $this->hasManyThrough('App\User', 'App\Teem');
+    }
+
 }

@@ -30,4 +30,8 @@ class User extends Authenticatable
     public function organizer(){
         return $this->hasOne('App\Organization');
     }
+
+    public function teems(){
+        return $this->belongsToMany('App\Teem');
+    }
 }

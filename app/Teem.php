@@ -34,4 +34,8 @@ class Teem extends Model
         return $this->belongsTo('App\Organization');
     }
 
+    public function users(){
+        return $this->belongsToMany('App\User');
+    }
+
 }
