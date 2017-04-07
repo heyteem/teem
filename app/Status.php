@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
-class Organization extends Model
+class Status extends Model
 {
-
     use SoftDeletes;
+
+    protected $table = 'statuses';
 
     /**
      * The attributes that are mass assignable.
@@ -17,8 +18,8 @@ class Organization extends Model
      * @var array
      */
     protected $fillable = [
-        'name',
-        'user_id',
+        'status_type_id',
+        'until',
     ];
 
     /**
@@ -31,19 +32,7 @@ class Organization extends Model
 
 
     protected $dates = [
-        'deleted_at'
+        'deleted_at',
+        'until',
     ];
-
-    public function creator(){
-        return $this->belongsTo('App\User');
-    }
-
-    public function teems(){
-        return $this->hasMany('App\Teem');
-    }
-
-    public function users(){
-        return $this->hasManyThrough('App\User', 'App\Teem');
-    }
-
 }

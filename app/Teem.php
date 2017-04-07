@@ -15,7 +15,8 @@ class Teem extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'organization_id',
+        'name',
+        'organization_id',
     ];
 
     /**

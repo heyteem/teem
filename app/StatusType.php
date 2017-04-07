@@ -17,7 +17,8 @@ class StatusType extends Model
      * @var array
      */
     protected $fillable = [
-        'label', 'color',
+        'label',
+        'color',
     ];
 
     /**
