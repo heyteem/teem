@@ -90,16 +90,28 @@ footer .footer-inner span {
 }
 
 .section {
-  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.section:first-child {
+.section-set h3 {
   margin-top: 0px;
 }
 
-.section .section-label {
-  font-size: 30px;
-  margin-bottom: 10px;
+.section-org {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.section-org h2 {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.section-teem .section-teem-header h3 {
+  margin-top: 15px;
+  margin-bottom: 4px;
 }
 
 .status-box {
@@ -193,6 +205,11 @@ footer .footer-inner span {
   outline: none;
 }
 
+.status-box .status-box_status-none, .status-box-set .status-box_status-select-none:hover {
+  background-color: #fafafa;
+  color: #888888;
+}
+
 .status-box .status-box_status-in, .status-box-set .status-box_status-select-in:hover {
   background-color: #76e076;
   color: #ffffff;
@@ -243,10 +260,6 @@ footer .footer-inner span {
 
 .status-box-titles .status-box-titles_time {
   flex-basis: 55px;
-}
-
-.section-updates .section-label {
-  margin-bottom: -8px;
 }
 
 
@@ -313,11 +326,11 @@ footer .footer-inner span {
     font-size: 24px;
   }
 
-  .section-updates .status-box-titles-title {
+  .section-teem .status-box-titles-title {
     font-size: 12px;
   }
 
-  .section-updates .status-box-titles .status-box-titles_time {
+  .section-teem .status-box-titles .status-box-titles_time {
     flex-basis: 35px;
   }
 
@@ -330,7 +343,7 @@ footer .footer-inner span {
     font-size: 12px;
   }
 
-  .status-box .status-box_action, .section-updates .status-box-titles .status-box-titles-title-action {
+  .status-box .status-box_action, .section-teem .status-box-titles .status-box-titles-title-action {
     flex: auto 0;
     flex-basis: 50px;
   }

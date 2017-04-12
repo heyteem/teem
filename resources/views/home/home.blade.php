@@ -2,11 +2,9 @@
 
 @section('content')
 <div class="container">
-  <div class="row section section-set-status">
+  <div class="row section section-set">
     <div class="col-xs-12">
-      <div class="section-label">
-        You
-      </div>
+      <h3>You</h3>
       <div class="status-box status-box-set">
         <div class="status-box_time">
           <div class="status-box-section-content">
@@ -59,134 +57,142 @@
       </div>
     </div>
   </div>
-  <div class="row section section-updates">
+  <div class="row section-org">
     <div class="col-xs-12">
-      <div class="section-label">
-        Teem
-      </div>
-      <div class="status-box-titles">
-        <div class="status-box-titles_time">
+      <h2>Organization</h2>
+      <span><a href="#">Invite +</a></span>
+    </div>
+  </div>
+  <div class="row section section-teem">
+    <div class="col-xs-12">
+      <div class="section-teem-header">
+        <h3>Teem</h3>
+        <div class="status-box-titles">
+          <div class="status-box-titles_time">
 
-        </div>
-        <div class="status-box-titles-title">
-          Name
-        </div>
-        <div class="status-box-titles-title">
-          Status
-        </div>
-        <div class="status-box-titles-title">
-          Until
-        </div>
-        <div class="status-box-titles-title status-box-titles-title-action">
+          </div>
+          <div class="status-box-titles-title">
+            Name
+          </div>
+          <div class="status-box-titles-title">
+            Status
+          </div>
+          <div class="status-box-titles-title">
+            Until
+          </div>
+          <div class="status-box-titles-title status-box-titles-title-action">
 
-        </div>
-      </div>
-      <div class="status-box">
-        <div class="status-box_time">
-          <div class="status-box-section-content">
-            15m
-          </div>
-        </div>
-        <div class="status-box-section status-box_name">
-          <div class="status-box-section-content">
-            <div class="status-box_name-first">Bob</div>
-            <div class="status-box_name-last">Specht</div>
-          </div>
-        </div>
-        <div class="status-box-section status-box_status status-box_status-in">
-          <div class="status-box-section-content">
-            In
-          </div>
-        </div>
-        <div class="status-box-section status-box_until">
-          <div class="status-box-section-content">
-            All Day
-          </div>
-        </div>
-        <div class="status-box-section status-box_action">
-          <div class="status-box-section-content">
-            Ask
           </div>
         </div>
       </div>
-      <div class="status-box">
-        <div class="status-box_time">
-          <div class="status-box-section-content">
-            2h
+      <div class="section-teem-updates">
+        <div class="status-box">
+          <div class="status-box_time">
+            <div class="status-box-section-content">
+              15m
+            </div>
+          </div>
+          <div class="status-box-section status-box_name">
+            <div class="status-box-section-content">
+              <div class="status-box_name-first">Bob</div>
+              <div class="status-box_name-last">Specht</div>
+            </div>
+          </div>
+          <div class="status-box-section status-box_status status-box_status-in">
+            <div class="status-box-section-content">
+              In
+            </div>
+          </div>
+          <div class="status-box-section status-box_until">
+            <div class="status-box-section-content">
+              All Day
+            </div>
+          </div>
+          <div class="status-box-section status-box_action">
+            <div class="status-box-section-content">
+              Ask
+            </div>
           </div>
         </div>
-        <div class="status-box-section status-box_name">
-          <div class="status-box-section-content">
-            Chris
+        <div class="status-box">
+          <div class="status-box_time">
+            <div class="status-box-section-content">
+              2h
+            </div>
+          </div>
+          <div class="status-box-section status-box_name">
+            <div class="status-box-section-content">
+              Chris
+            </div>
+          </div>
+          <div class="status-box-section status-box_status status-box_status-out">
+            <div class="status-box-section-content">
+              Out
+            </div>
+          </div>
+          <div class="status-box-section status-box_until">
+            <div class="status-box-section-content">
+              2pm
+            </div>
+          </div>
+          <div class="status-box-section status-box_action">
+            <div class="status-box-section-content">
+              Ask
+            </div>
           </div>
         </div>
-        <div class="status-box-section status-box_status status-box_status-out">
-          <div class="status-box-section-content">
-            Out
+        <div class="status-box">
+          <div class="status-box_time">
+            <div class="status-box-section-content">
+              2h
+            </div>
+          </div>
+          <div class="status-box-section status-box_name">
+            <div class="status-box-section-content">
+              Chris
+            </div>
+          </div>
+          <div class="status-box-section status-box_status status-box_status-meeting">
+            <div class="status-box-section-content">
+              Meeting
+            </div>
+          </div>
+          <div class="status-box-section status-box_until">
+            <div class="status-box-section-content">
+              2pm
+            </div>
+          </div>
+          <div class="status-box-section status-box_action">
+            <div class="status-box-section-content">
+              Ask
+            </div>
           </div>
         </div>
-        <div class="status-box-section status-box_until">
-          <div class="status-box-section-content">
-            2pm
+        <div class="status-box">
+          <div class="status-box_time">
+            <div class="status-box-section-content">
+              –
+            </div>
           </div>
-        </div>
-        <div class="status-box-section status-box_action">
-          <div class="status-box-section-content">
-            Ask
+          <div class="status-box-section status-box_name">
+            <div class="status-box-section-content">
+              Chris
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="status-box">
-        <div class="status-box_time">
-          <div class="status-box-section-content">
-            2h
+          <div class="status-box-section status-box_status status-box_status-none">
+            <div class="status-box-section-content">
+              –
+            </div>
           </div>
-        </div>
-        <div class="status-box-section status-box_name">
-          <div class="status-box-section-content">
-            Chris
+          <div class="status-box-section status-box_until">
+            <div class="status-box-section-content">
+              –
+            </div>
           </div>
-        </div>
-        <div class="status-box-section status-box_status status-box_status-meeting">
-          <div class="status-box-section-content">
-            Meeting
-          </div>
-        </div>
-        <div class="status-box-section status-box_until">
-          <div class="status-box-section-content">
-            2pm
-          </div>
-        </div>
-        <div class="status-box-section status-box_action">
-          <div class="status-box-section-content">
-            Ask
-          </div>
-        </div>
-      </div>
-      <div class="status-box">
-        <div class="status-box_time">
-          <div class="status-box-section-content">
-            2h
-          </div>
-        </div>
-        <div class="status-box-section status-box_name">
-          <div class="status-box-section-content">
-            Chris
-          </div>
-        </div>
-        <div class="status-box-section status-box_status status-box_status-home">
-          <div class="status-box-section-content">
-            Home
-          </div>
-        </div>
-        <div class="status-box-section status-box_until">
-          <div class="status-box-section-content">
-            2pm
-          </div>
-        </div>
-        <div class="status-box-section status-box_action">
-          <div class="status-box-section-content">
-            Ask
+          <div class="status-box-section status-box_action">
+            <div class="status-box-section-content">
+              Ask
+            </div>
           </div>
         </div>
       </div>
